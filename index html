@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore India - Travel Website</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+header {
+    background: #1e3a5f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+nav {
+    background: #142840;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* SEARCH */
+.search-section {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.search-section h2 {
+    color: #1e3a5f;
+    margin-bottom: 20px;
+}
+
+#searchBox {
+    width: 70%;
+    max-width: 600px;
+    padding: 15px;
+    border: 2px solid #1e3a5f;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#searchButton {
+    padding: 15px 25px;
+    margin-left: 8px;
+    background: #1e3a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background: #142840;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.result-card {
+    background: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+}
+
+.result-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.result-card h3 {
+    color: #1e3a5f;
+    padding: 15px 15px 5px;
+}
+
+.result-card p {
+    padding: 5px 15px 20px;
+}
+
+section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #1e3a5f;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.15);
+}
+
+.card h3 {
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.contact {
+    background: #eaf0f6;
+}
+
+footer {
+    background: #142840;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Explore India</h1>
+    <p>Your guide to amazing destinations</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="home" class="hero">
+    <h2>Welcome to Explore India</h2>
+    <p>Discover beautiful destinations, culture, history and unforgettable experiences.</p>
+</section>
+
+<!-- SEARCH SECTION -->
+<section class="search-section">
+
+    <h2>Find Your Destination</h2>
+
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="Search for beach, temple, mountain..."
+    >
+
+    <button id="searchButton" onclick="searchDestination()">
+        Search
+    </button>
+
+    <div id="results"></div>
+
+</section>
+
+<section>
+    <h2>Introduction</h2>
+
+    <p>
+        Explore India is a travel website designed to help visitors
+        discover beautiful destinations across India. Search for
+        beaches, temples and other popular travel destinations.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Beautiful Beaches</h3>
+            <p>Discover relaxing beaches and coastal destinations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Historic Temples</h3>
+            <p>Explore India's ancient temples and cultural heritage.</p>
+        </div>
+
+        <div class="card">
+            <h3>Adventure</h3>
+            <p>Find exciting destinations for trekking and sightseeing.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Explore India was created to make travel planning simple
+        and enjoyable. We introduce travelers to interesting
+        destinations, cultural landmarks, beaches and adventure
+        locations throughout India.
+    </p>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>If you have questions or suggestions, feel free to contact us.</p>
+
+    <br>
+
+    <p><strong>Email:</strong> exploreindia@example.com</p>
+
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+
+</section>
+
+<footer>
+    <p>© 2026 Explore India. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+
+function searchDestination() {
+
+    let search = document
+        .getElementById("searchBox")
+        .value
+        .toLowerCase()
+        .trim();
+
+    let results = document.getElementById("results");
+
+    results.innerHTML = "";
+
+    if (search.includes("beach")) {
+
+        results.innerHTML = `
+
+        <div class="result-card">
+
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Goa Beach</h3>
+
+            <p>
+                Enjoy beautiful beaches, golden sand,
+                water activities and stunning sunsets in Goa.
+            </p>
+
+        </div>
+
+        <div class="result-card">
+
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Marina Beach</h3>
+
+            <p>
+                Visit Marina Beach in Chennai and enjoy
+                its long coastline and beautiful scenery.
+            </p>
+
+        </div>
+
+        `;
+
+    } else if (search.includes("temple")) {
+
+        results.innerHTML = `
+
+        <div class="result-card">
+
+            <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Meenakshi Temple</h3>
+
+            <p>Explore the historic Meenakshi Temple in Madurai.</p>
+
+        </div>
+
+        <div class="result-card">
+
+            <img src="https://images.unsplash.com/photo-1600100397608-f010b5a3f1b6?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Golden Temple</h3>
+
+            <p>Visit the beautiful Golden Temple in Amritsar.</p>
+
+        </div>
+
+        `;
+
+    } else if (search.length > 0) {
+
+        results.innerHTML = `
+            <p>
+                No recommendations found. Try searching for
+                <strong>beach</strong> or <strong>temple</strong>.
+            </p>
+        `;
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
