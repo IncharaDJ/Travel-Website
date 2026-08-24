@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Travel Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: #023e8a;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #0077b6;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About Us</h1>
+        <p>Learn more about our Travel Website</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section>
+        <h2>About Our Company</h2>
+
+        <p>
+            Our Travel Website is a travel platform created to help people
+            discover beautiful and interesting destinations. We provide
+            information about beaches, temples, historical places, nature
+            destinations and other tourist attractions.
+        </p>
+
+        <p>
+            Our goal is to make travel planning easier by providing useful
+            destination information and recommendations for travelers.
+        </p>
+
+        <h2>Guidance and Instructions for Team Members</h2>
+
+        <ul>
+            <li>Keep all destination information accurate and up to date.</li>
+            <li>Add clear and useful descriptions for recommended places.</li>
+            <li>Use appropriate and relevant images for destinations.</li>
+            <li>Check all website links before publishing changes.</li>
+            <li>Maintain a professional and user-friendly website.</li>
+            <li>Update travel information regularly.</li>
+            <li>Follow the team's website and content guidelines.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Travel Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
