@@ -8,4 +8,4 @@ async function connectDB() {
 }
 
 module.exports = { client, connectDB };
-await client.connect();
+
